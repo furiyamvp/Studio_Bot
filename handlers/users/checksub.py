@@ -1,23 +1,45 @@
 from aiogram import types
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from keyboards.inline.check_sub import subs_check
+from keyboards.default.admin import admin_main_menu_def
+from keyboards.default.user import user_main_menu_def
 from loader import dp
-from main.config import CHANNELS
-from utils.misc import subscription
+from main.config import CHANNELS, ADMINS
+from utils.db_commands.users import get_user, add_user
+from utils.misc.subscription import check
+
+ADMINS = [int(admin_id) for admin_id in ADMINS]
 
 
 @dp.callback_query_handler(text="check_subs", state="*")
 async def check_subs_handler(call: types.CallbackQuery):
-    result = "Botdan foydalanish uchun quyidagi kanalga obuna bo'ling:\n"
+    result = "Siz kanalarga obuna bo'lmadingiz ❌"
     final_status = True
-    for channel in CHANNELS:
-        status = await subscription.check(user_id=call.message.chat.id, channel=channel[1])
+    markup = InlineKeyboardMarkup(row_width=1)
+
+    for idx, channel in enumerate(CHANNELS, start=1):
+        status = await check(user_id=int(call.message.chat.id), channel=channel[1])
         if not status:
             final_status = False
-            result += f"👉 <a href='{channel[0]}'>{channel[-1]}</a>\n"
+            button = InlineKeyboardButton(text=f"{idx} - kanal", url=channel[0])
+            markup.add(button)
+
     if not final_status:
-        await call.message.answer(result, disable_web_page_preview=True, reply_markup=subs_check)
+        markup.add(InlineKeyboardButton(text="⭕️ Obunani tekshirish", callback_data="check_subs"))
+        await call.message.answer(result, disable_web_page_preview=True, reply_markup=markup)
     else:
-        text = ("😊 Assalomu alaykum,\n"
-                "Siz bu bot orqali studio pubg kanaliga kirib 10 ta odam qoshsangiz tekin akk yutib olasiz")
-        await call.message.answer(text=text)
+        if await get_user(call.message.chat.id):
+            if call.message.chat.id in ADMINS:
+                text = "Siz muvaffaqiyatli obuna boldingiz,\nBot ishga tushdi 🤖✅"
+                await call.message.answer(text=text, reply_markup=await admin_main_menu_def())
+            else:
+                text = "Siz muvaffaqiyatli obuna boldingiz,\nBot ishga tushdi 🤖✅"
+                await call.message.answer(text=text, reply_markup=await user_main_menu_def())
+        else:
+            await add_user(message=call.message)
+            if call.message.chat.id in ADMINS:
+                text = "Siz muvaffaqiyatli obuna boldingiz,\nBot ishga tushdi 🤖✅"
+                await call.message.answer(text=text, reply_markup=await admin_main_menu_def())
+            else:
+                text = "Siz muvaffaqiyatli obuna boldingiz,\nBot ishga tushdi 🤖✅"
+                await call.message.answer(text=text, reply_markup=await user_main_menu_def())

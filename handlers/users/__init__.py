@@ -1,3 +1,3 @@
-from . import help
-from . import start
+from . import admin_panel
+from . import user_panel
 from . import checksub

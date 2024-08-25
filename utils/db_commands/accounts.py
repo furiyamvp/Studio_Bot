@@ -1,4 +1,3 @@
-import random
 from main.database import database
 from main.models import account
 

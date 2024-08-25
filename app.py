@@ -10,6 +10,7 @@ from utils.set_bot_commands import set_default_commands
 async def on_startup(dispatcher):
     await database.connect()
     await set_default_commands(dispatcher)
+
     await on_startup_notify(dispatcher)
 
 
