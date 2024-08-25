@@ -21,7 +21,6 @@ async def add_user(message):
             suggested=0,
             created_at=message.date
         )
-        print(2)
         await database.execute(query)
         return True
     except Exception as e:

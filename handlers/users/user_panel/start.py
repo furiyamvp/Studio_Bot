@@ -9,12 +9,10 @@ from utils.db_commands.users import get_user, get_user_data, update_suggested, a
 
 @dp.message_handler(CommandStart())
 async def send_welcome(message: types.Message):
-    print(1)
     args = message.get_args()
     user_id = int(message.chat.id)
 
     if await get_user(chat_id=user_id):
-        print(3)
         if args:
             if await get_user(chat_id=int(args)):
                 if user_id != args:
