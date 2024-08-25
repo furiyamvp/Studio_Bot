@@ -1,20 +1,23 @@
 from aiogram import types
+from aiogram.dispatcher.filters import CommandStart
+
 from keyboards.default.user import user_main_menu_def
 from loader import dp, bot
 from utils.db_commands.accounts import get_account_data
 from utils.db_commands.users import get_user, get_user_data, update_suggested, add_user, update_suggested_to_zero
 
 
-@dp.message_handler(commands=['start'])
+@dp.message_handler(CommandStart())
 async def send_welcome(message: types.Message):
-    args = int(message.get_args())
+    print(1)
+    args = message.get_args()
     user_id = int(message.chat.id)
 
     if not await get_user(chat_id=user_id):
         if args:
-            if await get_user(chat_id=args):
+            if await get_user(chat_id=int(args)):
                 if user_id != args:
-                    update_result = await update_suggested(chat_id=args, date=message.date)
+                    update_result = await update_suggested(chat_id=int(args), date=message.date)
                     suggested = await get_user_data(chat_id=int(args))
 
                     if isinstance(suggested, dict) and "suggested" in suggested:
@@ -30,7 +33,7 @@ async def send_welcome(message: types.Message):
                                         f"📧 Email: {account_data.get('email')}\n"
                                         f"🔐 Parol: {account_data.get('password')}"
                                     )
-                                    await update_suggested_to_zero(chat_id=args, date=message.date)
+                                    await update_suggested_to_zero(chat_id=int(args), date=message.date)
                                     await message.answer(text=friend_text)
                                     await bot.send_message(args, text=bot_text)
                                 else:
@@ -61,6 +64,9 @@ async def send_welcome(message: types.Message):
             if args:
                 error_text = "⚠️ Siz bizda oldindan bor bo'lganingiz uchun do'stingizga ball berilmaydi."
                 await message.answer(text=error_text)
+            else:
+                text = "👋 Xush kelibsiz!"
+                await message.reply(text=text, reply_markup=await user_main_menu_def())
         else:
             text = "👋 Xush kelibsiz!"
             await message.reply(text=text, reply_markup=await user_main_menu_def())

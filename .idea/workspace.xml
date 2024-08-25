@@ -5,104 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc4ea424-5abb-463a-8640-c13ab65f04e7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Pubg_Bot.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Studio_Bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Studio_Bot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/.env.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/alembic/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/alembic/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/alembic/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/alembic/versions/0b4eaf0d561e_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/alembic/versions/824f0d5fd05a_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/alembic/versions/b996c5d8074a_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/filters/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/channels/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/errors/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/errors/error_handler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/groups/Sokinish.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/groups/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/groups/user_add_member.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/users/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/users/admin_panel/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/users/admin_panel/add_pubg_account.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/users/admin_panel/start_admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/users/admin_panel/statistics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/users/checksub.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/users/user_panel/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/users/user_panel/start.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/users/user_panel/user_ball.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/handlers/users/user_panel/user_referral_link.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/keyboards/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/keyboards/default/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/keyboards/default/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/keyboards/default/back.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/keyboards/default/user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/keyboards/inline/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/loader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/main/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/main/database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/main/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/middlewares/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/middlewares/checksub.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/middlewares/throttling.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/states/AddPubgAccount.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/states/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/utils/check.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/utils/db_commands/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/utils/db_commands/accounts.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/utils/db_commands/statictics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/utils/db_commands/users.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/utils/misc/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/utils/misc/logging.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/utils/misc/subscription.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/utils/misc/throttling.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/utils/notify_admins.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studio_Bot/utils/set_bot_commands.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic.ini" beforeDir="false" afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/alembic/env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/script.py.mako" beforeDir="false" afterPath="$PROJECT_DIR$/alembic/script.py.mako" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/369edfca9bbf_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/5feb7f32952f_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/7036c3b2852a_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/filters/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/errors/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/errors/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/errors/error_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/errors/error_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/groups/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/groups/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/groups/user_add_member.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/checksub.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/checksub.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/help.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/start.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboards/inline/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/inline/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboards/inline/check_sub.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/checksub.py" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/checksub.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/throttling.py" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/throttling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/db_commands/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/db_commands/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/misc/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/misc/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/misc/logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/misc/logging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/misc/subscription.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/misc/subscription.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/misc/throttling.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/misc/throttling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/notify_admins.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/notify_admins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/set_bot_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/set_bot_commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/user_panel/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/user_panel/start.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,15 +31,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.app.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Asus/Desktop/Studio_Bot/handlers/groups",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Asus/Desktop/Studio_Bot/handlers/groups&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Asus\Desktop\Studio_Bot\handlers\groups" />
