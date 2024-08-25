@@ -36,14 +36,14 @@
     &quot;Python.app.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Asus/Desktop/Studio_Bot/handlers/groups&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Asus/Desktop/Studio_Bot/handlers/users/user_panel&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Asus\Desktop\Studio_Bot\handlers\groups" />
       <recent name="C:\Users\Asus\Desktop\Studio_Bot\handlers\users\user_panel" />
+      <recent name="C:\Users\Asus\Desktop\Studio_Bot\handlers\groups" />
     </key>
   </component>
   <component name="RunManager">

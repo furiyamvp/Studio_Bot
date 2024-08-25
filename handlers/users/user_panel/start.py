@@ -13,7 +13,8 @@ async def send_welcome(message: types.Message):
     args = message.get_args()
     user_id = int(message.chat.id)
 
-    if not await get_user(chat_id=user_id):
+    if await get_user(chat_id=user_id):
+        print(3)
         if args:
             if await get_user(chat_id=int(args)):
                 if user_id != args:
@@ -68,5 +69,5 @@ async def send_welcome(message: types.Message):
                 text = "👋 Xush kelibsiz!"
                 await message.reply(text=text, reply_markup=await user_main_menu_def())
         else:
-            text = "👋 Xush kelibsiz!"
+            text = "User qo'shishda xatolik yuz berdi"
             await message.reply(text=text, reply_markup=await user_main_menu_def())
