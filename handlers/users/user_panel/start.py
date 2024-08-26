@@ -15,14 +15,14 @@ async def send_welcome(message: types.Message):
     if await get_user(chat_id=user_id):
         if args:
             if await get_user(chat_id=int(args)):
-                if user_id != args:
+                if user_id != int(args):
                     update_result = await update_suggested(chat_id=int(args), date=message.date)
                     suggested = await get_user_data(chat_id=int(args))
 
                     if isinstance(suggested, dict) and "suggested" in suggested:
                         suggested_value = suggested["suggested"]
 
-                        if isinstance(suggested_value, int) and suggested_value % 29 == 0:
+                        if isinstance(suggested_value, int) and suggested_value % 20 == 0:
                             account_data = await get_account_data(message.date)
                             if account_data and isinstance(account_data, dict):
                                 if update_result:
