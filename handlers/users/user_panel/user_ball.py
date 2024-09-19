@@ -18,5 +18,5 @@ async def referral_link_handler(message: types.Message):
             text = f"🎯 Sizning {user_data['suggested']}ta ballingiz bor"
             await message.answer(text=text, reply_markup=await user_main_menu_def())
         else:
-            error_text = "Bizda user qo'shish qismida muamo chiqdi biz bilan bog'laning."
+            error_text = "⚠️ Bizda user qo'shish qismida muamo chiqdi biz bilan bog'laning."
             await message.answer(text=error_text)

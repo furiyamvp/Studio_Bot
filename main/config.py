@@ -10,7 +10,7 @@ BOT_TOKEN = env.str("BOT_TOKEN")
 ADMINS = env.list("ADMINS")
 
 CHANNELS = [
-    ("https://t.me/studio_pubgm", -1002229745608, "Studio Chat")
+    ("https://t.me/silver_salle", -1002229745608, "Silver Salle")
 ]
 
 CHANNEL_ID = int(-1002162896780)

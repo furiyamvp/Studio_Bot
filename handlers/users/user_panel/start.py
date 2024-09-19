@@ -67,5 +67,5 @@ async def send_welcome(message: types.Message):
                 text = "👋 Xush kelibsiz!"
                 await message.reply(text=text, reply_markup=await user_main_menu_def())
         else:
-            text = "User qo'shishda xatolik yuz berdi"
+            text = "⚠️ User qo'shishda xatolik yuz berdi"
             await message.reply(text=text, reply_markup=await user_main_menu_def())
